@@ -1,0 +1,65 @@
+head {
+    font-size: 16px;
+    color: #333;
+}
+body {
+    font-family: "Poppins";
+    background-color: #ffffff;
+}
+header {
+    background-color: #046DD5;
+    line-height: 1em;
+    padding: 1em;
+}
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+header h1 a {
+    font-weight: 600;
+}
+header h2 a {
+    font-weight: lighter;
+}
+div[id="signup"] a[href="register.html"] {
+    padding-right: 15px;
+    border-right: 1px solid #ffffff;
+}
+div[id="signup"] a[href="login.html"] {
+    padding-left: 15px;
+}
+nav input {
+    display: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+ul li:nth-child(1) {
+    border-top: #E1493E 6px solid;
+}
+ul li:nth-child(2) {
+    border-top: #8ABA56 6px solid;
+}
+ul li:nth-child(3) {
+    border-top: #5B4282 6px solid;
+}
+ul li:nth-child(4) {
+    border-top: #FF8932 6px solid;
+}
+ul li:nth-child(5) {
+    border-top: #19B6E9 6px solid;
+}
+ul li:nth-child(6) {
+    border-top: #E84C8B 6px solid;
+}
