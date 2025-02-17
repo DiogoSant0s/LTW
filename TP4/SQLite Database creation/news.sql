@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS news;
+DROP TABLE IF EXISTS comments;
+
 CREATE TABLE users (
   username VARCHAR PRIMARY KEY,      -- unique username
   password VARCHAR,                  -- password stored in sha-1
