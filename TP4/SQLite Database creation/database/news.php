@@ -16,4 +16,12 @@
         $stmt = $db->prepare('UPDATE news SET title = ?, introduction = ?, fulltext = ? WHERE id = ?');
         $stmt->execute(array($title, $introduction, $fulltext, $id));
     }
+    function insertArticle($db, $title, $introduction, $fulltext, $username) {
+        $stmt = $db->prepare('INSERT INTO news (title, introduction, fulltext, published, username) VALUES (?, ?, ?, ?, ?)');
+        $stmt->execute(array($title, $introduction, $fulltext, time(), $username));
+    }
+    function deleteArticle($db, $id) {
+        $stmt = $db->prepare('DELETE FROM news WHERE id = ?');
+        $stmt->execute(array($id));
+    }
 ?>

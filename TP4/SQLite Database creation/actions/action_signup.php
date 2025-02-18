@@ -1,6 +1,4 @@
 <?php
-    session_start();
-
     require_once('../database/connection.php');
     require_once('../database/users.php');
 
@@ -10,6 +8,7 @@
     $password = $_POST['password'];
     $name = $_POST['name'];
 
+    session_start();
     if (userExists($db, $username, $password)) {
         $_SESSION['error'] = 'Username already exists';
         header('Location: ../pages/signup.php');

@@ -1,7 +1,8 @@
 <?php
     require_once('../database/connection.php');
     require_once('../database/news.php');
-
+    require_once('../database/comments.php');
+    
     session_start();
     if (!isset($_SESSION['username'])) {
         header('Location: ../pages/index.php');
@@ -11,12 +12,10 @@
     $db = getDatabaseConnection();
 
     $id = $_POST['id'];
-    $title = $_POST['title'];
-    $introduction = $_POST['introduction'];
-    $fulltext = $_POST['fulltext'];
 
-    updateArticle($db, $id, $title, $introduction, $fulltext);
+    deleteCommentsByNewsId($db, $id);
+    deleteArticle($db, $id);
 
-    header("Location: ../pages/article.php?id=$id");
+    header('Location: ../pages/index.php');
     exit();
 ?>

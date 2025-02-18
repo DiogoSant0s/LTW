@@ -10,13 +10,13 @@
 
     $db = getDatabaseConnection();
 
-    $id = $_POST['id'];
     $title = $_POST['title'];
     $introduction = $_POST['introduction'];
     $fulltext = $_POST['fulltext'];
+    $username = $_SESSION['username'];
 
-    updateArticle($db, $id, $title, $introduction, $fulltext);
+    insertArticle($db, $title, $introduction, $fulltext, $username);
 
-    header("Location: ../pages/article.php?id=$id");
+    header('Location: ../pages/index.php');
     exit();
 ?>
