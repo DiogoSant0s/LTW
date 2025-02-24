@@ -10,5 +10,5 @@ sqlite3 -init news.sql news.db
 To create the server, run the following command in the terminal:
 
 ``` bash
-php -S localhost:9000 -t pages
+php -S localhost:9000
 ```

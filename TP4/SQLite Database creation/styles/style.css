@@ -1,0 +1,99 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Styles for the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* Styles for the aside */
+aside {
+    background-color: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+/* Styles for articles */
+article {
+    background-color: white;
+    border-inline-start: 1em solid #aa2828;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+article h2, article h1 {
+    color: #333;
+}
+article p {
+    color: #666;
+    line-height: 1.6;
+}
+/* Styles for forms */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+form input[type="text"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+/* Styles for comments section */
+#comments {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+#comments h2 {
+    color: #333;
+}
+#comments p {
+    color: #666;
+    line-height: 1.6;
+}
