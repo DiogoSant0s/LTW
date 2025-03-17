@@ -15,14 +15,14 @@
     </head>
     <body>
         <?php output_simple_header(); ?>
-        <h1>Sign Up</h1>
+        <h1 class="forms">Sign Up</h1>
         <?php
         if (isset($_SESSION['error'])) {
             echo '<p style="color: red;">' . $_SESSION['error'] . '</p>';
             unset($_SESSION['error']);
         }
         ?>
-        <form action="../actions/action_signup.php" method="post">
+        <form class="forms" action="../actions/action_signup.php" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br>
             <label for="password">Password:</label>
@@ -31,6 +31,7 @@
             <input type="text" id="name" name="name" required><br>
             <button type="submit">Sign Up</button>
         </form>
+        <p class="forms">Already have an account? <a href="login.php">Sign in</a></p>
         <?php output_footer(); ?>
     </body>
 </html>
