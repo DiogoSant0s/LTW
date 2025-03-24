@@ -8,6 +8,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="../styles/style.css">
             <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <script src="../scripts/notification.js"></script>
+            <script src="../scripts/auto_resize.js"></script>
         </head>
         <body>
         <header>
@@ -20,29 +22,6 @@
                     <?php } else { ?>
                         <li><a href="login.php">Login</a></li>
                     <?php } ?>
-                </ul>
-            </nav>
-        </header>
-        <aside>
-            <p>Welcome to the news website!</p>
-        </aside>
-    <?php }
-    function output_simple_header() { ?>
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>News Website</title>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../styles/style.css">
-            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        </head>
-        <body>
-        <header>
-            <h1>News Website</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
                 </ul>
             </nav>
         </header>
