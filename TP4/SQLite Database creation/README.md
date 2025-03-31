@@ -4,7 +4,7 @@
 - To create the database, run the following command in the terminal:
 
 ``` bash
-sqlite3 -init news.sql news.db
+sqlite3 database/news.db < database/news.sql
 ```
 
 To create the server, run the following command in the terminal:

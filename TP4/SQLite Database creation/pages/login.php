@@ -32,7 +32,7 @@
                 <button type="submit">Login</button>
             </form>
             <p class="forms">Don't have an account? <a href="signup.php">Sign up</a></p>
-            
+        </main>
         <?php output_footer(); ?>
     </body>
 </html>
